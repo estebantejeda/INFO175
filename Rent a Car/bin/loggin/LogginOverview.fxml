@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loggin.LogginController">
+   <children>
+      <Pane prefHeight="350.0" prefWidth="200.0" style="-fx-background-color: #607D8B;">
+         <children>
+            <MaterialDesignIconView glyphName="ACCOUNT_BOX_OUTLINE" layoutX="51.0" layoutY="134.0" size="100" />
+            <JFXTextField fx:id="userField" layoutX="27.0" layoutY="174.0" promptText="Usuario" />
+            <JFXPasswordField fx:id="passField" layoutX="27.0" layoutY="210.0" promptText="Contraseña" />
+            <JFXButton fx:id="logginButton" layoutX="27.0" layoutY="278.0" onAction="#handleLogginButtonAction" prefHeight="28.0" prefWidth="145.0" style="-fx-background-color: #34515e;" text="Iniciar Sesión" textFill="#eceff1" />
+            <Label fx:id="warning" alignment="CENTER" layoutX="24.0" layoutY="318.0" prefHeight="18.0" prefWidth="154.0" text="Label" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <FontAwesomeIconView glyphName="CAR" layoutX="350.0" layoutY="200.0" size="100" />
+      <Label alignment="CENTER" layoutX="330.0" layoutY="225.0" prefHeight="30.0" prefWidth="154.0" text="Rent a Car">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="closeButton" layoutX="580.0" onMouseClicked="#handleClose" text="X" textFill="#607d8b">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
